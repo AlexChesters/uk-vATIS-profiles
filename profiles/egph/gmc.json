@@ -78,7 +78,7 @@
         {
           "Ordinal": 2,
           "Text": "DATALINK CLEARANCES ARE AVAILABLE",
-          "Enabled": true
+          "Enabled": false
         }
       ],
       "TransitionLevels": [
