@@ -113,6 +113,15 @@
           "Altitude": 55
         }
       ],
+      "atisFormat": {
+        "altimeter": {
+          "pronounceDecimal": false,
+          "template": {
+            "text": "QNH {altimeter} ({altimeter|text})",
+            "voice": "QNH {altimeter}"
+          }
+        }
+      },
       "UseFaaFormat": false,
       "UseNotamPrefix": false,
       "UseTransitionLevelPrefix": true,
