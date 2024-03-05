@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+      - name: zip profiles
+        run: zip -9 -r uk-vatis-profiles.zip profiles
+      - name: assume-github-actions-role
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.PROJECTS_BUCKET_LIVE_UPLOAD_ROLE_ARN }}
+          aws-region: eu-west-1
+      - name: deploy profiles
+        run: aws s3 cp uk-vatis-profiles.zip s3://projects-live-bucket-bucket-llkgmktc4xmo/uk-vATIS-profiles/uk-vatis-profiles.zip --cache-control max-age=60 --acl public-read
