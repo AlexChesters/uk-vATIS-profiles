@@ -24,4 +24,4 @@ jobs:
           role-to-assume: ${{ secrets.PROJECTS_BUCKET_LIVE_UPLOAD_ROLE_ARN }}
           aws-region: eu-west-1
       - name: deploy profiles
-        run: aws s3 cp uk-vatis-profiles.zip s3://projects-live-bucket-bucket-x5u4945s2wzh/uk-vATIS-profiles/uk-vatis-profiles.zip --cache-control max-age=60 --acl public-read
+        run: aws s3 cp uk-vatis-profiles.zip s3://projects-live-bucket-bucket-x5u4945s2wzh/uk-vATIS-profiles/uk-vatis-profiles.zip --cache-control max-age=60
