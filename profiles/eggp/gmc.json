@@ -118,6 +118,22 @@
           "Altitude": 50
         }
       ],
+      "atisFormat": {
+        "altimeter": {
+          "pronounceDecimal": false,
+          "template": {
+            "text": "QNH {altimeter} ({altimeter|text})",
+            "voice": "QNH {altimeter}"
+          }
+        },
+        "closingStatement": {
+          "autoIncludeClosingStatement": false,
+          "template": {
+            "text": "...ADVS YOU HAVE INFO {letter}",
+            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+          }
+        }
+      },
       "UseFaaFormat": false,
       "UseNotamPrefix": false,
       "UseTransitionLevelPrefix": true,
