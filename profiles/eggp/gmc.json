@@ -58,14 +58,14 @@
           "AirportConditions": null,
           "Notams": null,
           "ArbitraryText": null,
-          "Template": "THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 27. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE] AND ADVISE AIRCRAFT TYPE AND STAND NUMBER ON FIRST CONTACT."
+          "Template": "THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 27. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
         },
         {
           "Name": "RUNWAY 09",
           "AirportConditions": null,
           "Notams": null,
           "ArbitraryText": null,
-          "Template": "THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 09. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE] AND ADVISE AIRCRAFT TYPE AND STAND NUMBER ON FIRST CONTACT."
+          "Template": "THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 09. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
         }
       ],
       "AirportConditionDefinitions": [],
@@ -127,10 +127,10 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": false,
+          "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO LIVERPOOL GROUND ON 121.955",
+            "voice": "DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO LIVERPOOL GROUND ON 121.955"
           }
         }
       },
