@@ -85,32 +85,32 @@
         {
           "Low": 940,
           "High": 958,
-          "Altitude": 80
+          "Altitude": 90
         },
         {
           "Low": 959,
           "High": 976,
-          "Altitude": 75
+          "Altitude": 85
         },
         {
           "Low": 977,
           "High": 994,
-          "Altitude": 70
+          "Altitude": 80
         },
         {
           "Low": 995,
-          "High": 1012,
-          "Altitude": 65
+          "High": 1013,
+          "Altitude": 75
         },
         {
-          "Low": 1013,
+          "Low": 1014,
           "High": 1031,
-          "Altitude": 60
+          "Altitude": 70
         },
         {
           "Low": 1032,
           "High": 1049,
-          "Altitude": 55
+          "Altitude": 65
         }
       ],
       "atisFormat": {
