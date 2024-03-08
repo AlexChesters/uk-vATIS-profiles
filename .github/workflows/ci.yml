@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v4
+      - name: install-poetry
+        run: pipx install poetry==1.8.2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
