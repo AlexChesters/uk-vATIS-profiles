@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "uk-vatis-profiles"
+version = "0.0.0"
+description = "vATIS profiles for UK VATSIM controllers"
+authors = ["Alex Chesters <alex@cheste.rs>"]
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
