@@ -7,4 +7,4 @@ clean:
 package: clean
 	mkdir dist
 	poetry run python ci/scripts/package.py
-	zip -9 -r uk-vatis-profiles.zip dist
+	cd dist && zip -9 -r ../uk-vatis-profiles.zip . && cd ..
