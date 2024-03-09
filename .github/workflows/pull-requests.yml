@@ -1,0 +1,35 @@
+name: Pull Requests
+
+on:
+  pull_request:
+    branches:
+      - "*"
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+      - name: install-poetry
+        run: pipx install poetry==1.8.2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'poetry'
+      - name: install dependencies
+        run: make env
+      - name: package
+        run: make package
+      - name: assume-github-actions-role
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.PROJECTS_BUCKET_LIVE_UPLOAD_ROLE_ARN }}
+          aws-region: eu-west-1
+      - name: deploy profiles
+        run: aws s3 cp uk-vatis-profiles.zip s3://projects-live-bucket-bucket-x5u4945s2wzh/uk-vATIS-profiles/${{ github.head_ref }}/uk-vatis-profiles.zip --cache-control max-age=60
