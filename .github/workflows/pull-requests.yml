@@ -8,6 +8,7 @@ on:
 permissions:
   id-token: write
   contents: read
+  pull-requests: write 
 
 jobs:
   build:
@@ -33,3 +34,8 @@ jobs:
           aws-region: eu-west-1
       - name: deploy profiles
         run: aws s3 cp uk-vatis-profiles.zip s3://projects-live-bucket-bucket-x5u4945s2wzh/uk-vATIS-profiles/${{ github.head_ref }}/uk-vatis-profiles.zip --cache-control max-age=60
+      - name: comment on PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: Download the changes in this pull request [here](https://projects.alexchesters.com/uk-vATIS-profiles/${{ github.head_ref }}/uk-vatis-profiles.zip).
+          comment_tag: download_link
