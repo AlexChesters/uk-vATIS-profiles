@@ -37,4 +37,4 @@ jobs:
       - name: comment on PR
         uses: thollander/actions-comment-pull-request@v2
         with:
-          message: Download the changes in this pull request [here](https://projects.alexchesters.com/uk-vATIS-profiles/${{ github.head_ref }}/uk-vatis-profiles.zip)
+          message: Download the changes in this pull request [here](https://projects.alexchesters.com/uk-vATIS-profiles/${{ github.head_ref }}/uk-vatis-profiles.zip).
