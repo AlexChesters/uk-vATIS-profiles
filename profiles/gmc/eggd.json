@@ -1,0 +1,136 @@
+{
+  "Name": "Jersey",
+  "Identifier": "EGJJ",
+  "Contractions": [
+    {
+      "String": "HPA",
+      "Spoken": "HECTO-PASKALS"
+    },
+    {
+      "String": "RNAV",
+      "Spoken": "ARE-NAV"
+    },
+    {
+      "String": "CAVOK",
+      "Spoken": "CAV-OH-KAY"
+    },
+    {
+      "String": "RNP",
+      "Spoken": "ARE-ENN-PEE"
+    },
+    {
+      "String": "WIP",
+      "Spoken": "WORK-IN-PROGRESS"
+    },
+    {
+      "String": "ILS",
+      "Spoken": "EYE-ELL-ESS"
+    },
+    {
+      "String": "ATC",
+      "Spoken": "AY-TEE-SEE"
+    },
+    {
+      "String": "DATALINK",
+      "Spoken": "DATA-LINK"
+    }
+  ],
+  "AtisFrequency": 26025,
+  "ObservationTime": {
+    "Enabled": false,
+    "Time": 0
+  },
+  "MagneticVariation": {
+    "Enabled": false,
+    "MagneticDegrees": 0
+  },
+  "AtisVoice": {
+    "UseTextToSpeech": true,
+    "Voice": "UK Female"
+  },
+  "IDSEndpoint": null,
+  "Presets": [
+    {
+      "Name": "RUNWAY 27",
+      "AirportConditions": null,
+      "Notams": null,
+      "ArbitraryText": null,
+      "Template": "THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 27. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
+    },
+    {
+      "Name": "RUNWAY 09",
+      "AirportConditions": null,
+      "Notams": null,
+      "ArbitraryText": null,
+      "Template": "THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 09. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
+    }
+  ],
+  "AirportConditionDefinitions": [],
+  "NotamDefinitions": [
+    {
+      "Ordinal": 1,
+      "Text": "ATC LOW VISIBILITY PROCEDURES IN FORCE.",
+      "Enabled": false
+    },
+    {
+      "Ordinal": 2,
+      "Text": "DATALINK CLEARANCES ARE AVAILABLE",
+      "Enabled": false
+    }
+  ],
+  "TransitionLevels": [
+    {
+      "Low": 940,
+      "High": 958,
+      "Altitude": 90
+    },
+    {
+      "Low": 959,
+      "High": 976,
+      "Altitude": 85
+    },
+    {
+      "Low": 977,
+      "High": 994,
+      "Altitude": 80
+    },
+    {
+      "Low": 995,
+      "High": 1013,
+      "Altitude": 75
+    },
+    {
+      "Low": 1014,
+      "High": 1031,
+      "Altitude": 70
+    },
+    {
+      "Low": 1032,
+      "High": 1049,
+      "Altitude": 65
+    }
+  ],
+  "atisFormat": {
+    "altimeter": {
+      "pronounceDecimal": false,
+      "template": {
+        "text": "QNH {altimeter} ({altimeter|text})",
+        "voice": "QNH {altimeter}"
+      }
+    },
+    "closingStatement": {
+      "autoIncludeClosingStatement": true,
+      "template": {
+        "text": "DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO BRISTOL GROUND ON 121.925",
+        "voice": "DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO BRISTOL GROUND ON 121.925"
+      }
+    }
+  },
+  "UseFaaFormat": false,
+  "UseNotamPrefix": false,
+  "UseTransitionLevelPrefix": true,
+  "UseMetricUnits": false,
+  "UseSurfaceWindPrefix": true,
+  "UseVisibilitySuffix": false,
+  "UseDecimalTerminology": true
+}
