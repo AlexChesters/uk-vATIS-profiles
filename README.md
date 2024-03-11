@@ -2,7 +2,7 @@
 vATIS profiles for UK VATSIM controllers
 
 # Downloads
-You can download the profiles [here](https://projects.alexchesters.com/uk-vATIS-profiles/uk-vatis-profiles.zip).
+You can download the profiles [here](https://projects.alexchesters.com/uk-vATIS-profiles/main/uk-vatis-profiles.zip).
 
 # Acknowledgements
 Thanks to [Lenny](https://github.com/lennycolton/vATIS-Profiles) and
