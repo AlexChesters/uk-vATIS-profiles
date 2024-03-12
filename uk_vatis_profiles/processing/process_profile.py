@@ -1,5 +1,5 @@
-from uk_vatis_profiles.process_presets import process_presets
-from uk_vatis_profiles.process_transition_levels import process_transition_levels
+from uk_vatis_profiles.processing.process_presets import process_presets
+from uk_vatis_profiles.processing.process_transition_levels import process_transition_levels
 
 def process_profile(profile):
     airfield_name = profile["name"]

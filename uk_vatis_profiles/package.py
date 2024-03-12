@@ -3,7 +3,7 @@ import json
 
 from ruamel.yaml import YAML
 
-from uk_vatis_profiles.process_profile import process_profile
+from uk_vatis_profiles.processing.process_profile import process_profile
 
 # find every position
 # find every profile for every position
