@@ -12,4 +12,4 @@ package: run
 	cd dist && zip -9 -r ../uk-vatis-profiles.zip . && cd ..
 
 test: clean
-	poetry run pylint ci
+	poetry run pylint uk_vatis_profiles
