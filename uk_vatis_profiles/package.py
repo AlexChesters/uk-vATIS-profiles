@@ -31,7 +31,7 @@ for position, position_path in positions:
     for airfield in airfields:
         with open(airfield, mode="r", encoding="utf-8") as f:
             airfield_data = yaml.load(f)
-            profile = process_profile(airfield_data)
+            profile = process_profile(airfield_data, position)
             combined_profile["Composites"].append(profile)
 
     with open(f"{dist_dir_path}/{position.lower()}.json", mode="w", encoding="utf-8") as f:

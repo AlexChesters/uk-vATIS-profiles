@@ -1,7 +1,11 @@
 from uk_vatis_profiles.processing.process_presets import process_presets
 from uk_vatis_profiles.processing.process_transition_levels import process_transition_levels
 
-def process_profile(profile):
+position_map = {
+    "GMC": "GROUND"
+}
+
+def process_profile(profile, position):
     airfield_name = profile["name"]
     primary_frequency = profile["primary_frequency"]
 
@@ -82,9 +86,8 @@ def process_profile(profile):
             "closingStatement": {
                 "autoIncludeClosingStatement": True,
                 "template": {
-                    # TODO: stop hardcoding GROUND in the below
-                    "text": f"DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO {airfield_name.upper()} GROUND ON {primary_frequency}",
-                    "voice": f"DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO {airfield_name.upper()} GROUND ON {primary_frequency}"
+                    "text": f"DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO {airfield_name.upper()} {position_map[position]} ON {primary_frequency}",
+                    "voice": f"DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO {airfield_name.upper()} {position_map[position]} ON {primary_frequency}"
                 }
             }
         }
