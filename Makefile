@@ -4,7 +4,12 @@ env:
 clean:
 	rm -rf dist
 
-package: clean
+run: clean
 	mkdir dist
-	poetry run python ci/scripts/package.py
+	poetry run python -m uk_vatis_profiles.package
+
+package: run
 	cd dist && zip -9 -r ../uk-vatis-profiles.zip . && cd ..
+
+test: clean
+	poetry run pylint ci

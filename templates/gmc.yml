@@ -1,5 +1,5 @@
-Name: Manchester
-Identifier: EGCC
+Name: {{NAME}}
+Identifier: {{CODE}}
 Contractions:
   - String: HPA
     Spoken: HECTO-PASKALS
@@ -30,14 +30,14 @@ AtisVoice:
 IDSEndpoint: null
 Presets:
   - Name: RUNWAY 23R (single-runway operations)
-    AirportConditions:
-    Notams:
-    ArbitraryText:
+    AirportConditions: null
+    Notams: null
+    ArbitraryText: null
     Template: THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 23R. SINGLE RUNWAY OPERATIONS. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE].
   - Name: RUNWAY 05L (single-runway operations)
-    AirportConditions:
-    Notams:
-    ArbitraryText:
+    AirportConditions: null
+    Notams: null
+    ArbitraryText: null
     Template: THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE 05L. SINGLE RUNWAY OPERATIONS. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE].
 AirportConditionDefinitions: []
 NotamDefinitions:

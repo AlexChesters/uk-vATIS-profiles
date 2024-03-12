@@ -24,6 +24,8 @@ jobs:
           cache: 'poetry'
       - name: install dependencies
         run: make env
+      - name: test
+        run: make test
       - name: package
         run: make package
       - name: assume-github-actions-role

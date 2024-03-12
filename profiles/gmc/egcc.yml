@@ -1,0 +1,33 @@
+name: Manchester
+code: EGCC
+atis_frequency: 21855
+primary_frequency: 121.855
+presets:
+  - name: RUNWAY 23R (single-runway operations)
+    runway_identifier: 23R
+    conditions: SINGLE RUNWAY OPERATIONS
+  - name: RUNWAY 05L (single-runway operations)
+    runway_identifier: 05L
+    conditions: SINGLE RUNWAY OPERATIONS
+transition_levels:
+  - low: 940
+    high: 958
+    altitude: 80
+  - low: 959
+    high: 976
+    altitude: 75
+  - low: 977
+    high: 994
+    altitude: 70
+  - low: 995
+    high: 1012
+    altitude: 65
+  - low: 1013
+    high: 1031
+    altitude: 60
+  - low: 1032
+    high: 1049
+    altitude: 55
+  - low: 1050
+    high: 1060
+    altitude: 50

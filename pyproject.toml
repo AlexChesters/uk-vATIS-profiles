@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "uk-vatis-profiles"
+name = "uk_vatis_profiles"
 version = "0.0.0"
 description = "vATIS profiles for UK VATSIM controllers"
 authors = ["Alex Chesters <alex@cheste.rs>"]
@@ -8,7 +8,11 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
+ruamel-yaml = "^0.18.6"
 
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.1.0"
 
 [build-system]
 requires = ["poetry-core"]

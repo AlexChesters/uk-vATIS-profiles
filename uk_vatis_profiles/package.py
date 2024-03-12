@@ -1,6 +1,10 @@
 import os
 import json
 
+from ruamel.yaml import YAML
+
+from uk_vatis_profiles.process_profile import process_profile
+
 # find every position
 # find every profile for every position
 # combine to a single file per position, e.g.
@@ -10,8 +14,10 @@ import json
 
 # absolute path to the directory name this script lives in
 SCRIPT_DIR = os.path.dirname(__file__)
-profiles_dir_path = os.path.join(SCRIPT_DIR, "..", "..", "profiles")
-dist_dir_path = os.path.join(SCRIPT_DIR, ".." , "..", "dist")
+profiles_dir_path = os.path.join(SCRIPT_DIR, "..", "profiles")
+dist_dir_path = os.path.join(SCRIPT_DIR, ".." , "dist")
+
+yaml = YAML()
 
 positions = [
     (position.upper(), os.path.join(profiles_dir_path, position))
@@ -31,8 +37,9 @@ for position, position_path in positions:
 
     for airfield in airfields:
         with open(airfield, mode="r", encoding="utf-8") as f:
-            airfield_data = json.load(f)
-            combined_profile["Composites"].append(airfield_data)
+            airfield_data = yaml.load(f)
+            profile = process_profile(airfield_data)
+            combined_profile["Composites"].append(profile)
 
     with open(f"{dist_dir_path}/{position.lower()}.json", mode="w", encoding="utf-8") as f:
         json.dump(combined_profile, f, indent=2)
