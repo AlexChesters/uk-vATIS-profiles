@@ -1,0 +1,259 @@
+{
+  "type": "object",
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "Composites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string"
+          },
+          "Identifier": {
+            "type": "string"
+          },
+          "Contractions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "String": {
+                  "type": "string"
+                },
+                "Spoken": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "String",
+                "Spoken"
+              ]
+            }
+          },
+          "AtisFrequency": {
+            "type": "integer"
+          },
+          "ObservationTime": {
+            "type": "object",
+            "properties": {
+              "Enabled": {
+                "type": "boolean"
+              },
+              "Time": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "Enabled",
+              "Time"
+            ]
+          },
+          "MagneticVariation": {
+            "type": "object",
+            "properties": {
+              "Enabled": {
+                "type": "boolean"
+              },
+              "MagneticDegrees": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "Enabled",
+              "MagneticDegrees"
+            ]
+          },
+          "AtisVoice": {
+            "type": "object",
+            "properties": {
+              "UseTextToSpeech": {
+                "type": "boolean"
+              },
+              "Voice": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "UseTextToSpeech",
+              "Voice"
+            ]
+          },
+          "IDSEndpoint": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Presets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Name": {
+                  "type": "string"
+                },
+                "AirportConditions": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "Notams": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "ArbitraryText": {
+                  "type": [
+                    "null",
+                    "string"
+                  ]
+                },
+                "Template": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Name",
+                "Template"
+              ]
+            }
+          },
+          "AirportConditionDefinitions": {
+            "type": "array"
+          },
+          "NotamDefinitions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Ordinal": {
+                  "type": "integer"
+                },
+                "Text": {
+                  "type": "string"
+                },
+                "Enabled": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "Ordinal",
+                "Text",
+                "Enabled"
+              ]
+            }
+          },
+          "TransitionLevels": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Low": {
+                  "type": "integer"
+                },
+                "High": {
+                  "type": "integer"
+                },
+                "Altitude": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "Low",
+                "High",
+                "Altitude"
+              ]
+            }
+          },
+          "atisFormat": {
+            "type": "object",
+            "properties": {
+              "altimeter": {
+                "type": "object",
+                "properties": {
+                  "pronounceDecimal": {
+                    "type": "boolean"
+                  },
+                  "template": {
+                    "type": "object",
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "voice": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "text",
+                      "voice"
+                    ]
+                  }
+                },
+                "required": [
+                  "pronounceDecimal",
+                  "template"
+                ]
+              },
+              "closingStatement": {
+                "type": "object",
+                "properties": {
+                  "autoIncludeClosingStatement": {
+                    "type": "boolean"
+                  },
+                  "template": {
+                    "type": "object",
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "voice": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "text",
+                      "voice"
+                    ]
+                  }
+                },
+                "required": [
+                  "autoIncludeClosingStatement",
+                  "template"
+                ]
+              }
+            },
+            "required": [
+              "altimeter",
+              "closingStatement"
+            ]
+          }
+        },
+        "required": [
+          "Name",
+          "Identifier",
+          "Contractions",
+          "AtisFrequency",
+          "ObservationTime",
+          "MagneticVariation",
+          "AtisVoice",
+          "IDSEndpoint",
+          "Presets",
+          "AirportConditionDefinitions",
+          "NotamDefinitions",
+          "TransitionLevels",
+          "atisFormat"
+        ]
+      }
+    }
+  },
+  "required": [
+    "Name",
+    "Composites"
+  ]
+}
