@@ -5,9 +5,8 @@ position_map = {
     "GMC": "GROUND"
 }
 
-def process_profile(profile, position):
+def process_profile(profile):
     airfield_name = profile["name"]
-    primary_frequency = profile["primary_frequency"]
 
     return {
         "Name": airfield_name,
@@ -86,8 +85,8 @@ def process_profile(profile, position):
             "closingStatement": {
                 "autoIncludeClosingStatement": True,
                 "template": {
-                    "text": f"DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO {airfield_name.upper()} {position_map[position]} ON {primary_frequency}",
-                    "voice": f"DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO {airfield_name.upper()} {position_map[position]} ON {primary_frequency}"
+                    "text": profile["closing_statement"],
+                    "voice": profile["closing_statement"]
                 }
             }
         }

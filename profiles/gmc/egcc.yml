@@ -1,7 +1,6 @@
 name: Manchester
 code: EGCC
 atis_frequency: 21855
-primary_frequency: 121.855
 presets:
   - name: RUNWAY 23R (single-runway operations)
     runway_identifier: 23R
@@ -31,3 +30,4 @@ transition_levels:
   - low: 1050
     high: 1060
     altitude: 50
+closing_statement: DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO MANCHESTER GROUND ON 121.855
