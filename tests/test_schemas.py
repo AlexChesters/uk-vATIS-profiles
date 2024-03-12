@@ -12,7 +12,7 @@ schemas_dir = os.path.join(SCRIPT_DIR, "schemas")
 
 positions = os.listdir(dist_dir_path)
 
-class GMCSchemaTests(unittest.TestCase):
+class ProfilesSchemaTests(unittest.TestCase):
     def setUp(self):
         pass
 
