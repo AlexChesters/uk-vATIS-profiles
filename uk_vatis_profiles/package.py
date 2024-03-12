@@ -5,13 +5,6 @@ from ruamel.yaml import YAML
 
 from uk_vatis_profiles.processing.process_profile import process_profile
 
-# find every position
-# find every profile for every position
-# combine to a single file per position, e.g.
-# dist/
-#   gmc.json
-#   gmp.json
-
 # absolute path to the directory name this script lives in
 SCRIPT_DIR = os.path.dirname(__file__)
 profiles_dir_path = os.path.join(SCRIPT_DIR, "..", "profiles")
