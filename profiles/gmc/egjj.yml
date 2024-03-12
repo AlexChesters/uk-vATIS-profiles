@@ -1,0 +1,31 @@
+name: Jersey
+code: EGJJ
+atis_frequency: 34680
+presets:
+  - name: RUNWAY 26
+    runway_identifier: "26"
+  - name: RUNWAY 08
+    runway_identifier: "08"
+transition_levels:
+  - low: 940
+    high: 958
+    altitude: 80
+  - low: 959
+    high: 976
+    altitude: 75
+  - low: 977
+    high: 994
+    altitude: 70
+  - low: 995
+    high: 1013
+    altitude: 65
+  - low: 1014
+    high: 1031
+    altitude: 60
+  - low: 1032
+    high: 1049
+    altitude: 55
+  - low: 1050
+    high: 1060
+    altitude: 50
+closing_statement: DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO JERSEY GROUND ON 121.905

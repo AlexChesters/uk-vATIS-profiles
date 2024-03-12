@@ -3,10 +3,10 @@ code: EGCC
 atis_frequency: 21855
 presets:
   - name: RUNWAY 23R (single-runway operations)
-    runway_identifier: 23R
+    runway_identifier: "23R"
     conditions: SINGLE RUNWAY OPERATIONS
   - name: RUNWAY 05L (single-runway operations)
-    runway_identifier: 05L
+    runway_identifier: "05L"
     conditions: SINGLE RUNWAY OPERATIONS
 transition_levels:
   - low: 940
