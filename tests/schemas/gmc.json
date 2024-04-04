@@ -135,7 +135,8 @@
                   "type": "integer"
                 },
                 "Text": {
-                  "type": "string"
+                  "type": "string",
+                  "pattern": ".*\\.$"
                 },
                 "Enabled": {
                   "type": "boolean"
