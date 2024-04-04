@@ -69,7 +69,7 @@ def process_profile(profile):
             },
             {
                 "Ordinal": 2,
-                "Text": "DATALINK CLEARANCES ARE AVAILABLE",
+                "Text": "DATALINK CLEARANCES ARE AVAILABLE.",
                 "Enabled": False
             }
         ],
