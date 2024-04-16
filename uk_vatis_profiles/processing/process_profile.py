@@ -71,6 +71,11 @@ def process_profile(profile):
                 "Ordinal": 2,
                 "Text": "DATALINK CLEARANCES ARE AVAILABLE.",
                 "Enabled": False
+            },
+            {
+                "Ordinal": 2,
+                "Text": "DATALINK CLEARANCES ARE NOT CURRENTLY AVAILABLE.",
+                "Enabled": False
             }
         ],
         "TransitionLevels": process_transition_levels(profile["transition_levels"]),
