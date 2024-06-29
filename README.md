@@ -58,5 +58,5 @@ closing_statement: DEPARTING AIRCRAFT REPORT STAND NUMBER AND AIRCRAFT TYPE TO M
 ```
 
 # Acknowledgements
-Thanks to [Lenny](https://github.com/lennycolton/vATIS-Profiles) and
+Thanks to [Lenny](https://github.com/lennycolton/vATIS-Profiles), [RedstonePilot](https://github.com/RedstonePilot/vATIS-Profiles) and
 [Fraser](https://community.vatsim.uk/topic/38856-unofficial-guide-vatis-generic-setup-and-configuration/#comment-350271) whose profiles have been a very useful starting point for these.
