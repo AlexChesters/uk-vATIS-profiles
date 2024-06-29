@@ -73,9 +73,14 @@ def process_profile(profile):
                 "Enabled": False
             },
             {
-                "Ordinal": 2,
+                "Ordinal": 3,
                 "Text": "DATALINK CLEARANCES ARE NOT CURRENTLY AVAILABLE.",
                 "Enabled": False
+            },
+            {
+                "Ordinal": 4,
+                "Text": "ONLY CALL FOR PUSHBACK WHEN TUG IS CONNECTED AND YOU ARE READY TO PUSH.",
+                "Enabled": True
             }
         ],
         "TransitionLevels": process_transition_levels(profile["transition_levels"]),
