@@ -1,6 +1,6 @@
 name: Manchester
 code: EGCC
-atis_frequency: 21855
+atis_frequency: 21980
 presets:
   - name: RUNWAY 23R (single-runway operations)
     runway_identifier: "23R"
