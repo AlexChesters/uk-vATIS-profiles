@@ -9,8 +9,8 @@ def process_presets(presets):
 
         template = None
 
-        single_runway_template = f"THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE {single_runway_identifier}. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
-        dual_runway_template = f"THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. DEPARTING RUNWAY {departure_runway_identifier}. ARRIVING RUNWAY {arrival_runway_identifier}. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
+        single_runway_template = f"THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. RUNWAY IN USE ^{single_runway_identifier}. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
+        dual_runway_template = f"THIS IS [FACILITY] INFORMATION [ATIS_CODE] AT TIME [OBS_TIME]. DEPARTING RUNWAY ^{departure_runway_identifier}. ARRIVING RUNWAY ^{arrival_runway_identifier}. [TL]. [WIND]. [VIS]. [RVR]. [PRESENT_WX]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE RECEIPT OF INFORMATION [ATIS_CODE]."
 
         if single_runway_identifier:
             template = single_runway_template
