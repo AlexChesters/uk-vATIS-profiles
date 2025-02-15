@@ -2,11 +2,19 @@ name: Manchester
 code: EGCC
 atis_frequency: 21980
 presets:
-  - name: RUNWAY 23R (single-runway operations)
+  - name: Westerlies (single-runway operations)
     runway_identifier: "23R"
     conditions: SINGLE RUNWAY OPERATIONS
-  - name: RUNWAY 05L (single-runway operations)
+  - name: Westerlies (dual-runway operations)
+    departure_runway_identifier: "23L"
+    arrival_runway_identifier: "23R"
+    conditions: DUAL RUNWAY OPERATIONS
+  - name: Easterlies (single-runway operations)
     runway_identifier: "05L"
+    conditions: SINGLE RUNWAY OPERATIONS
+  - name: Easterlies (dual-runway operations)
+    departure_runway_identifier: "05L"
+    arrival_runway_identifier: "05R"
     conditions: SINGLE RUNWAY OPERATIONS
 transition_levels:
   - low: 940
